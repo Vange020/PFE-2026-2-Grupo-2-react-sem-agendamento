@@ -1,4 +1,4 @@
-import dadosContato from '../dados/contato.js'
+import { Link } from 'react-router-dom'
 
 // Perguntas da seção Dúvidas (página Início)
 const duvidas = [
@@ -8,15 +8,15 @@ const duvidas = [
   },
   {
     pergunta: 'Qual é a faixa etária de cada programa?',
-    resposta: <>A <strong>PKZ atende atletas de 7 a 15 anos</strong>. A <strong>One to One atende pessoas de 17 a 90 anos</strong>. Se tiver dúvidas sobre qual programa escolher, fale com a equipe pelo <a href={dadosContato.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp</a>.</>,
+    resposta: <>A <strong>PKZ atende atletas de 7 a 15 anos</strong>. A <strong>One to One atende pessoas de 17 a 90 anos</strong>. Se tiver dúvidas sobre qual programa escolher, fale com a equipe pela <Link to="/contato">página de contato</Link>.</>,
   },
   {
     pergunta: 'É necessário já ter experiência com esportes ou musculação?',
-    resposta: <>A One to One também atende quem está começando na musculação. A PKZ tem foco na preparação física de jovens atletas. Para entender os requisitos de participação e qual programa corresponde ao seu momento, converse com a equipe pelo <a href={dadosContato.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp</a>.</>,
+    resposta: <>A One to One também atende quem está começando na musculação. A PKZ tem foco na preparação física de jovens atletas. Para entender os requisitos de participação e qual programa corresponde ao seu momento, converse com a equipe pela <Link to="/contato">página de contato</Link>.</>,
   },
   {
     pergunta: 'Como funciona a avaliação inicial?',
-    resposta: <>A avaliação inicial ajuda a identificar o ponto de partida do aluno e orientar seu acompanhamento. A equipe explica quais etapas se aplicam ao programa escolhido e como se preparar. Consulte os detalhes pelo <a href={dadosContato.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp</a>.</>,
+    resposta: <>A avaliação inicial ajuda a identificar o ponto de partida do aluno e orientar seu acompanhamento. A equipe explica quais etapas se aplicam ao programa escolhido e como se preparar. Consulte os detalhes pela <Link to="/contato">página de contato</Link>.</>,
   },
   {
     pergunta: 'Como é realizado o acompanhamento da evolução?',
@@ -24,7 +24,7 @@ const duvidas = [
   },
   {
     pergunta: 'Como os pais ou responsáveis acompanham o desempenho dos atletas?',
-    resposta: <>O projeto prevê que pais e responsáveis possam visualizar a evolução dos atletas da PKZ. Para saber como esse acompanhamento será disponibilizado e como acessar as informações, procure a equipe pelo <a href={dadosContato.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp</a>.</>,
+    resposta: <>O projeto prevê que pais e responsáveis possam visualizar a evolução dos atletas da PKZ. Para saber como esse acompanhamento será disponibilizado e como acessar as informações, procure a equipe pela <Link to="/contato">página de contato</Link>.</>,
   },
   {
     pergunta: 'O que são os testes utilizados no acompanhamento dos alunos?',
@@ -32,11 +32,11 @@ const duvidas = [
   },
   {
     pergunta: 'Como agendar uma aula experimental?',
-    resposta: <>Fale com a equipe pelo <a href={dadosContato.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp</a> para solicitar uma aula experimental no programa de interesse. Confirme com a equipe a disponibilidade e os próximos passos.</>,
+    resposta: <>Fale com a equipe pela <Link to="/contato">página de contato</Link> para solicitar uma aula experimental no programa de interesse. Confirme com a equipe a disponibilidade e os próximos passos.</>,
   },
   {
     pergunta: 'Como consultar horários e valores?',
-    resposta: <>Consulte a equipe pelo <a href={dadosContato.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp</a> para verificar os horários disponíveis e solicitar um <strong>orçamento personalizado</strong>. Os valores e as condições devem ser confirmados diretamente com a equipe.</>,
+    resposta: <>Consulte a equipe pela <Link to="/contato">página de contato</Link> para verificar os horários disponíveis e solicitar um <strong>orçamento personalizado</strong>. Os valores e as condições devem ser confirmados diretamente com a equipe.</>,
   },
 ]
 

@@ -18,7 +18,7 @@ export default function Inicio() {
       <Programas />
       <Chamada
         titulo="Vamos dar o próximo passo?"
-        texto="Fale com a equipe pelo WhatsApp para solicitar uma aula experimental ou esclarecer outras dúvidas."
+        texto="Fale com a equipe para solicitar uma aula experimental ou esclarecer outras dúvidas."
       />
     </>
   )

@@ -1,4 +1,4 @@
-import dadosContato from '../dados/contato.js'
+import { Link } from 'react-router-dom'
 
 // Card de um treinador (completo = versão da página Equipe)
 export default function CardTreinador(props) {
@@ -18,7 +18,7 @@ export default function CardTreinador(props) {
           <p className="apresentacao">{treinador.apresentacao}</p>
           <p className="tags">{treinador.tags}</p>
           <p className="cref">{treinador.cref}</p>
-          <a href={dadosContato.whatsapp} className="link-treinar" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <Link to="/contato" className="link-treinar">Contate-nos</Link>
         </>
       )}
     </article>

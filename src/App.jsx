@@ -11,6 +11,8 @@ import Fisioterapia from './pages/Fisioterapia.jsx'
 // final da fisioterapia
 import Equipe from './pages/Equipe.jsx'
 // final da equipe
+import Contato from './pages/Contato.jsx'
+// final do contato
 // Estrutura de todas as páginas: cabeçalho, página da rota atual e rodapé
 export default function App() {
   return (
@@ -29,6 +31,8 @@ export default function App() {
           {/* final da fisioterapia */}
           <Route path="/equipe" element={<Equipe />} />
           {/* final da equipe */}
+          <Route path="/contato" element={<Contato />} />
+          {/* final do contato */}
         </Routes>
       </main>
 

@@ -1658,3 +1658,62 @@ main h2 {
 }
 
 /* FINAL CÓDIGO - EQUIPE */
+
+/* COMEÇO CÓDIGO - CONTATO */
+
+.contato {
+  background-color: var(--fundo-suave);
+}
+
+.lista-contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+}
+
+.card-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid var(--borda);
+  border-radius: 24px;
+  background-color: var(--fundo);
+}
+
+/* Ícone redondo do WhatsApp e do Instagram */
+.card-contato i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--azul-claro);
+  color: var(--azul-escuro);
+  font-size: 22px;
+}
+
+.card-contato h2 {
+  font-size: 28px;
+}
+
+.card-contato p {
+  flex: 1;
+  color: var(--texto-suave);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .lista-contatos {
+    flex-direction: row;
+  }
+
+  .card-contato {
+    flex: 1;
+  }
+}
+
+/* FINAL CÓDIGO - CONTATO */

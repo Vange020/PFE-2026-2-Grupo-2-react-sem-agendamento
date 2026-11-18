@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import galeria from '../dados/galeria.js'
-import dadosContato from '../dados/contato.js'
+import { Link } from 'react-router-dom'
 
 // Celular = até 767px
 const consulta = () => window.matchMedia('(max-width: 767px)')
@@ -34,12 +34,12 @@ export default function Galeria() {
     setAtual(atual === galeria.length - 1 ? 0 : atual + 1)
   }
 
-  // Card do WhatsApp (aparece junto da galeria)
+  // Card que leva para a página de contato (aparece junto da galeria)
   const cardVisita = (
-    <a className="card-visita" href={dadosContato.whatsapp} target="_blank" rel="noopener noreferrer">
+    <Link className="card-visita" to="/contato">
       <h3>Venha conhecer</h3>
-      <span><i className="fa-brands fa-whatsapp"></i> WhatsApp &rarr;</span>
-    </a>
+      <span>Contate-nos &rarr;</span>
+    </Link>
   )
 
   // Celular: uma foto por vez, com setas
